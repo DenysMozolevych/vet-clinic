@@ -30,6 +30,7 @@ public class Main {
                 System.out.println("Access denied. Please recheck your PASS!");
             }
         }
+
         ScheduledExecutorService executorService = Executors.newScheduledThreadPool(1);
         boolean finalAccepted = accepted;
         executorService.schedule(() -> System.out.println(finalAccepted ? "Welcome to the Magic-Vet!" : "Application has been blocked.")
